@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhxrl33y4ogtp"]
+[gd_scene load_steps=4 format=3 uid="uid://dhxrl33y4ogtp"]
 
+[ext_resource type="Script" path="res://Player/Player.gd" id="1_d3k1k"]
 [ext_resource type="Texture2D" uid="uid://b35attu576e5s" path="res://Player/Player.png" id="1_s8sq0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d45m0"]
 size = Vector2(6, 6)
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_d3k1k")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_s8sq0")
