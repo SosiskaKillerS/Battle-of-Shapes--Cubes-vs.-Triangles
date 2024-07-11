@@ -37,3 +37,4 @@ scale = Vector2(0.460938, 0.460938)
 texture = ExtResource("3_86rn7")
 
 [node name="Marker2D" type="Marker2D" parent="GunCast2D"]
+position = Vector2(9, 0)
