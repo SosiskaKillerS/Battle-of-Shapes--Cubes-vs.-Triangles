@@ -11,6 +11,7 @@ size = Vector2(6, 6)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_d3k1k")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_s8sq0")
