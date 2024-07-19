@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dhk7beq75x6m4"]
+[gd_scene load_steps=6 format=3 uid="uid://dhk7beq75x6m4"]
 
 [ext_resource type="PackedScene" uid="uid://dhxrl33y4ogtp" path="res://Player/Player.tscn" id="1_51spg"]
 [ext_resource type="Texture2D" uid="uid://dwf6ot5ylw1nx" path="res://Tilemap/Tilemap.png" id="1_61s7n"]
+[ext_resource type="PackedScene" uid="uid://bl31b2pk420gj" path="res://mobs/enemy_1.tscn" id="3_ch0hb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_22a2e"]
 texture = ExtResource("1_61s7n")
@@ -25,5 +26,9 @@ layer_0/tile_data = PackedInt32Array(-2, 196608, 0, 65534, 196608, 0, 65535, 196
 
 [node name="Player" parent="." instance=ExtResource("1_51spg")]
 position = Vector2(1035, 531)
+
+[node name="Enemy1" parent="." instance=ExtResource("3_ch0hb")]
+position = Vector2(1193, 527)
+SPEED = 50
 
 [editable path="Player"]

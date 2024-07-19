@@ -15,7 +15,7 @@ func shoot():
 	owner.add_child(b)
 	b.transform = $GunCast2D/Marker2D.global_transform
 	
-func _physics_process(delta):
+func _physics_process(_delta):
 	get_input()
 	move_and_slide()
 	$GunCast2D.look_at(get_global_mouse_position())

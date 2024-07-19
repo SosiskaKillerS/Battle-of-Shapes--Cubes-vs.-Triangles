@@ -1,14 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://bl31b2pk420gj"]
+[gd_scene load_steps=5 format=3 uid="uid://bl31b2pk420gj"]
 
 [ext_resource type="Texture2D" uid="uid://b62ge6py1j5ym" path="res://mobs/Enemy1.png" id="1_bprc8"]
+[ext_resource type="Script" path="res://mobs/enemy_1.gd" id="1_irs3b"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rugmh"]
 radius = 8.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5ymjj"]
-radius = 30.2655
+radius = 149.003
 
 [node name="Enemy1" type="CharacterBody2D"]
+script = ExtResource("1_irs3b")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_bprc8")
@@ -20,3 +22,6 @@ shape = SubResource("CircleShape2D_rugmh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="agrZone"]
 shape = SubResource("CircleShape2D_5ymjj")
+
+[connection signal="body_entered" from="agrZone" to="." method="_on_agr_zone_body_entered"]
+[connection signal="body_exited" from="agrZone" to="." method="_on_agr_zone_body_exited"]
