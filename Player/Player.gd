@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+var hp = 100 
 const SPEED = 100
 
 var bullet = preload("res://bullet/area_2d.tscn")

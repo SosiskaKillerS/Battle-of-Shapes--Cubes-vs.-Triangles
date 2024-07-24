@@ -9,7 +9,7 @@ radius = 8.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_5ymjj"]
 radius = 149.003
 
-[node name="Enemy1" type="CharacterBody2D"]
+[node name="Enemy1" type="CharacterBody2D" groups=["mob"]]
 script = ExtResource("1_irs3b")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

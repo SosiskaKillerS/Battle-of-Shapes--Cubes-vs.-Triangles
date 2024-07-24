@@ -29,6 +29,5 @@ position = Vector2(1035, 531)
 
 [node name="Enemy1" parent="." instance=ExtResource("3_ch0hb")]
 position = Vector2(1193, 527)
-SPEED = 50
 
 [editable path="Player"]
