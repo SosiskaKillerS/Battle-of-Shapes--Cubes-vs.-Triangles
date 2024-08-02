@@ -1,11 +1,10 @@
 extends CharacterBody2D
 
-var hp = 50
-@export var damage = 10
+var hp = 100
+@export var enemy_damage = 10
 @export var SPEED = 50
-var body = null
 
-@onready var player = $"../Player"
+@onready var player = get_node("/root/world/Player")
 
 func take_damage(damage):
 	hp-=damage
@@ -15,6 +14,7 @@ func take_damage(damage):
 
 
 func _physics_process(_delta):
-	var direction = (player.position - position).normalized()
-	velocity = direction * SPEED
-	move_and_slide()
+	if player: 
+		var direction = (player.position - position).normalized()
+		velocity = direction * SPEED
+		move_and_slide()
