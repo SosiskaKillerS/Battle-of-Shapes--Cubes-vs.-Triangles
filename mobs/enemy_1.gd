@@ -15,8 +15,6 @@ func take_damage(damage):
 
 
 func _physics_process(_delta):
-	var direction = global_position.direction_to(player.global_position)
-	velocity  = direction*SPEED
-	move_and_slide() 
-	
-
+	var direction = (player.position - position).normalized()
+	velocity = direction * SPEED
+	move_and_slide()
