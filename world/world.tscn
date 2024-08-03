@@ -32,7 +32,7 @@ position = Vector2(1035, 531)
 position = Vector2(1109, 533)
 
 [node name="SpawnScene" parent="." instance=ExtResource("4_6c568")]
-position = Vector2(1095, 484)
 
 [editable path="Player"]
+[editable path="Enemy1"]
 [editable path="SpawnScene"]
