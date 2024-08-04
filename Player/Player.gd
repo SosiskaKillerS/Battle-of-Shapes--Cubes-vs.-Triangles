@@ -9,6 +9,11 @@ func get_input():
 	var input_direction = Input.get_vector("LEFT","RIGHT","UP","DOWN")
 	velocity = input_direction * SPEED
 	look_at(get_global_mouse_position())
+	
+func take_damage(damage):
+	hp-=damage
+	if hp <= 0:
+		queue_free()
 
 func shoot():
 	var b = bullet.instantiate()
@@ -21,4 +26,3 @@ func _physics_process(_delta):
 	$GunCast2D.look_at(get_global_mouse_position())
 	if Input.is_action_just_pressed("SHOOT"):
 		shoot() 
-		

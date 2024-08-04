@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgwvd16h574fp"]
+
+[ext_resource type="Script" path="res://enemy_bullet/area_2d.gd" id="1_dgtjj"]
+[ext_resource type="Texture2D" uid="uid://da6vdxhvlonv7" path="res://enemy_bullet/enemy_bullet.png" id="1_i3wst"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wsray"]
+size = Vector2(2, 2)
+
+[node name="Enemy_bullet" type="Area2D"]
+script = ExtResource("1_dgtjj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_i3wst")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_wsray")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

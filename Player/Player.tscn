@@ -9,7 +9,7 @@ size = Vector2(6, 6)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_82i18"]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_d3k1k")
 metadata/_edit_group_ = true
 
