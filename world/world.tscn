@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dhk7beq75x6m4"]
+[gd_scene load_steps=6 format=3 uid="uid://dhk7beq75x6m4"]
 
 [ext_resource type="PackedScene" uid="uid://dhxrl33y4ogtp" path="res://Player/Player.tscn" id="1_51spg"]
 [ext_resource type="Texture2D" uid="uid://dwf6ot5ylw1nx" path="res://Tilemap/Tilemap.png" id="1_61s7n"]
-[ext_resource type="PackedScene" uid="uid://bl31b2pk420gj" path="res://mobs/enemy_1.tscn" id="3_ch0hb"]
 [ext_resource type="PackedScene" uid="uid://bcfj5g0i1gbme" path="res://Spawn/spawn_scene.tscn" id="4_6c568"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_22a2e"]
@@ -28,9 +27,6 @@ layer_0/tile_data = PackedInt32Array(-2, 196608, 0, 65534, 196608, 0, 65535, 196
 [node name="Player" parent="." instance=ExtResource("1_51spg")]
 position = Vector2(1035, 531)
 
-[node name="Enemy1" parent="." instance=ExtResource("3_ch0hb")]
-position = Vector2(1109, 533)
-
 [node name="SpawnScene" parent="." instance=ExtResource("4_6c568")]
 position = Vector2(1002, 298)
 
@@ -39,6 +35,9 @@ position = Vector2(535, 515)
 
 [node name="SpawnScene3" parent="." instance=ExtResource("4_6c568")]
 position = Vector2(652, 765)
+
+[node name="SpawnScene8" parent="SpawnScene3" instance=ExtResource("4_6c568")]
+position = Vector2(0, -467)
 
 [node name="SpawnScene4" parent="." instance=ExtResource("4_6c568")]
 position = Vector2(1002, 765)
@@ -52,16 +51,12 @@ position = Vector2(1535, 515)
 [node name="SpawnScene7" parent="." instance=ExtResource("4_6c568")]
 position = Vector2(1385, 299)
 
-[node name="SpawnScene8" parent="." instance=ExtResource("4_6c568")]
-position = Vector2(652, 298)
-
 [editable path="Player"]
-[editable path="Enemy1"]
 [editable path="SpawnScene"]
 [editable path="SpawnScene2"]
 [editable path="SpawnScene3"]
+[editable path="SpawnScene3/SpawnScene8"]
 [editable path="SpawnScene4"]
 [editable path="SpawnScene5"]
 [editable path="SpawnScene6"]
 [editable path="SpawnScene7"]
-[editable path="SpawnScene8"]
