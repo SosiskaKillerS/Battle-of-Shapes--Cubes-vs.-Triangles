@@ -32,7 +32,36 @@ position = Vector2(1035, 531)
 position = Vector2(1109, 533)
 
 [node name="SpawnScene" parent="." instance=ExtResource("4_6c568")]
+position = Vector2(1002, 298)
+
+[node name="SpawnScene2" parent="." instance=ExtResource("4_6c568")]
+position = Vector2(535, 515)
+
+[node name="SpawnScene3" parent="." instance=ExtResource("4_6c568")]
+position = Vector2(652, 765)
+
+[node name="SpawnScene4" parent="." instance=ExtResource("4_6c568")]
+position = Vector2(1002, 765)
+
+[node name="SpawnScene5" parent="." instance=ExtResource("4_6c568")]
+position = Vector2(1385, 765)
+
+[node name="SpawnScene6" parent="." instance=ExtResource("4_6c568")]
+position = Vector2(1535, 515)
+
+[node name="SpawnScene7" parent="." instance=ExtResource("4_6c568")]
+position = Vector2(1385, 299)
+
+[node name="SpawnScene8" parent="." instance=ExtResource("4_6c568")]
+position = Vector2(652, 298)
 
 [editable path="Player"]
 [editable path="Enemy1"]
 [editable path="SpawnScene"]
+[editable path="SpawnScene2"]
+[editable path="SpawnScene3"]
+[editable path="SpawnScene4"]
+[editable path="SpawnScene5"]
+[editable path="SpawnScene6"]
+[editable path="SpawnScene7"]
+[editable path="SpawnScene8"]
